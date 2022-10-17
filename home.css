@@ -86,6 +86,7 @@ header {
 .banner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  box-sizing: border-box;
 }
 
 .bannertext {
@@ -284,4 +285,18 @@ footer ul li a:hover {
 address {
   margin-left: 0;
 }
+}
+@media (max-width:546px) {
+  .logo img {
+    max-width: 2.5em;
+    max-height: 2.5em;
+  }
+  .banner h1 {
+    font-size: 12vw;
+    margin: 16px;
+  }
+  .bannerimg img{
+    margin: 16px;
+    width: 90%;
+  }
 }

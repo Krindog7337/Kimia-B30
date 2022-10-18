@@ -130,7 +130,26 @@ section h2 {
 section p {
   margin: 1rem auto 2rem;
 }
-
+.introsec {
+  display: grid;
+  grid-template-columns: auto 40%;
+  grid-template-areas: 'intext inimg';
+}
+.introtext {
+  align-self: center;
+  text-align: right;
+  grid-area: intext;
+}
+.introimg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  grid-area: inimg;
+}
+.introimg img {
+  width: 100%;
+  height: auto;
+}
 #why {
   font-size: 1.1rem;
 
@@ -298,5 +317,13 @@ address {
   .bannerimg img{
     margin: 16px;
     width: 90%;
+  }
+  .introsec {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 'inimg' 'intext';
+  }
+  .introtext {
+    text-align: center;
   }
 }
